@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator dark">
+            <div class="theme-toggler active">
+                <i class="toggler-icon"></i>
+            </div>
+            <div class="display-screen">
+                <div id="display"><h1>EMI Calculator</h1></div>
+            </div>
+            <div class="content">
+                <table>
+                    <tr>
+                        <td>Amount (₹) : </td>
+                        <td>
+                            <input type="number" id="amount" onchange="calculate()"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Interest Rate :</td>
+                        <td>
+                            <input type="number" id="rate" onchange="calculate()"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Month's To Pay :
+                        </td>
+                        <td>
+                            <input type="number" id="months" onchange="calculate()"/>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <h1 id="totalvalue"></h1>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
